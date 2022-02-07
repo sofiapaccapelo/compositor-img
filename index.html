@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
     <title>Compositor de imágenes</title>
 </head>
-<body>
+<body onload="init()">
     <header>
         <img src="logo.png" alt="el logo">
         <h1>Compositor de imágenes</h1>
     </header>
+
+    <section>
+        <input type="file" id="load-imgs" multiple>
+    </section>
+
+    <section id="display-imgs">
+    </section>
+
+    <section id="result">
+        <select name="size" id="size">
+            <option value="A4">A4</option>
+            <option value="A3">A3</option>
+        </select>
+        
+        <select name="orientation" id="orientation">
+            <option value="landscape">landscape</option>
+            <option value="portrait">portrait</option>
+        </select>
+        
+        <button id="btn-process">Ordenar</button>
+        <canvas id="result-canvas"></canvas>
+    </section>
 
     <footer>autores: sofi y juani</footer>
 </body>

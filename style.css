@@ -1,0 +1,18 @@
+section {
+    margin: 25px 0;
+}
+
+.loaded-img {
+    width: 150px;
+    margin: 25px 10px;
+}
+
+#result-canvas {
+    border: 1px solid black;
+    display: block;
+    margin: 10px;
+}
+
+select {
+    display: block;
+}
